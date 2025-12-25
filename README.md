@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Зоомагазин ЗооМир - лучший магазин для ваших питомцев">
-    <meta name="keywords" content="зоомагазин, товары для животных, корм для животных, услуги для питомцев">
-    <meta name="author" content="Ангелина">
     <title>Ангелина - директор зоомагазина</title>
     <!-- Подключаем jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -282,9 +279,6 @@
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #ffffff4d;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            display: block;
-            margin: 0 auto;
         }
         
         .small-circle {
@@ -304,7 +298,6 @@
             height: 100%;
             object-fit: cover;
             border: none;
-            display: block;
         }
 
         /* ОБЩИЙ КОНТЕЙНЕР ДЛЯ ВСЕХ СЕКЦИЙ */
@@ -805,34 +798,6 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Стили для заглушек изображений */
-        .placeholder-image {
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            border: 4px solid #ffffff4d;
-            margin: 0 auto;
-        }
-        
-        .placeholder-small {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, #ef7e0d, #FFD700);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1rem;
-            border: 3px solid #FFD700;
-        }
-
         /* Медиа-запросы для адаптивности */
         @media (max-width: 768px) {
             .hero-section {
@@ -857,12 +822,12 @@
                 display: none;
             }
 
-            .hero-image img, .placeholder-image {
+            .hero-image img {
                 width: 300px;
                 height: 300px;
             }
 
-            .small-circle, .placeholder-small {
+            .small-circle {
                 width: 120px;
                 height: 120px;
                 top: 10px;
@@ -929,12 +894,12 @@
                 margin-bottom: 10px;
             }
 
-            .hero-image img, .placeholder-image {
+            .hero-image img {
                 width: 250px;
                 height: 250px;
             }
 
-            .small-circle, .placeholder-small {
+            .small-circle {
                 width: 100px;
                 height: 100px;
             }
@@ -1030,23 +995,9 @@
             <button class="cta-button" id="contactBtn">Связаться со мной</button>
         </div>
         <div class="hero-image">
-            <!-- ВАЖНО: Для GitHub Pages замените ссылки на изображения -->
-            <!-- Вариант 1: Использовать абсолютные ссылки на изображения в интернете -->
-            <!-- <img src="https://images.unsplash.com/photo-1560743173-567a3b5658b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ангелина - директор зоомагазина"> -->
-            
-            <!-- Вариант 2: Использовать относительные пути (если изображения в папке репозитория) -->
-            <!-- <img src="images/avatar.jpg" alt="Ангелина - директор зоомагазина"> -->
-            
-            <!-- Вариант 3: Заглушка, если изображений нет -->
-            <div class="placeholder-image">
-                Фото директора
-            </div>
-            
+            <img src="я.jpg" alt="Ангелина - директор зоомагазина">
             <div class="small-circle">
-                <!-- <img src="https://images.unsplash.com/photo-1550853024-10a42e2c61f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Ленивец"> -->
-                <div class="placeholder-small">
-                    Ленивец
-                </div>
+                <img src="ленивец.jpg" alt="Ленивец">
             </div>
         </div>
     </section>
